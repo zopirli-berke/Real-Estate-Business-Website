@@ -1,38 +1,43 @@
 <header class="header">
   <div class="container">
-    <nav class="nav">
+    <div class="header-wrapper">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
         <svg class="nav-logo-icon" width="28" height="28">
           <use href="{=$icon-path}"></use>
         </svg>
         Estatein
       </a>
-      <button class="nav-menu">
+      <button class="nav-menu" id="menu-icon">
         <svg class="nav-logo-icon" width="21" height="14">
           <use href="./img/sprite.svg#icon-menu"></use>
         </svg>
       </button>
+    </div>
 
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./about-us.html"
-            >About Us</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./properties-page.html"
-            >Properties</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./services.html"
-            >Services</a
-          >
-        </li>
-      </ul>
-    </nav>
+    <div class="nav-item">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link {=$highlight-act}" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {=$highlight-curr}" href="./about-us.html"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {=$highlight-curr}" href="./properties-page.html"
+              >Properties</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {=$highlight-curr}" href="./services.html"
+              >Services</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
+<script type="module" src="../js/header.js"></script>
