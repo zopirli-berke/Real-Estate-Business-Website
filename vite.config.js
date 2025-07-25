@@ -13,7 +13,14 @@ export default defineConfig(({ command }) => {
     build: {
       sourcemap: true,
       rollupOptions: {
-        input: glob.sync('./src/*.html'),
+        input: {
+          main: 'index.html',
+          about: 'about-us.html',
+          contact: 'contact.html',
+          properties: 'properties-page.html',
+          propertyDetails: 'property-details.html', // Dosya adına göre düzenle
+          services: 'services.html',
+        },
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
