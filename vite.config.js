@@ -41,7 +41,7 @@ export default defineConfig(({ command }) => {
           },
         },
       },
-      outDir: '../dist',
+      outDir: 'dist',
       emptyOutDir: true,
     },
     plugins: [
